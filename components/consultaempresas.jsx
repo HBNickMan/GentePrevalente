@@ -58,7 +58,7 @@ export function ConsultaEmpresas({ empresas }) {
             autoplaySpeed={2000}
             autoplayHoverPause={true}
           >
-            {empresas.map(empresa => (
+            {empresas && empresas.map(empresa => (
               <div key={empresa.empre_id} className="item">
                 <Link href={`/empresas/${empresa.empre_id}`} key={empresa.empre_id} >
                   <a>
