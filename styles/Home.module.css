@@ -1,0 +1,19 @@
+.container {
+    padding: 0 2em 0 0;
+  }
+    
+  .imgcard{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -25px;
+    margin-left: 25px;
+  }
+  
+  .textcard{
+    margin-top: .5rem !important;
+  }
+  
+  .textcard a,
+  .textcard p{
+    color: black !important; 
+  }
