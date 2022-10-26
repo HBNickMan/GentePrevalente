@@ -124,7 +124,7 @@ export function ConsultaEmpresas({ empresas }) {
 
 export const getServerSideProps = async (context) => {
 
-  const { data: empresas } = await axios.get('http://localhost:3000/api/empresas')
+  const { data: empresas } = await axios.get('https://genteprevalente-app.vercel.app/api/empresas')
 
   return {
     props: {

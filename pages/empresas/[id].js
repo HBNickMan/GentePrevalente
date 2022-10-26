@@ -61,7 +61,7 @@ function EmpresasView({ empresa }) {
 
 export const getServerSideProps = async (context) => {
 
-  const { data: empresa } = await axios.get('http://localhost:3000/api/empresas/' + context.query.id);
+  const { data: empresa } = await axios.get('https://genteprevalente-app.vercel.app/api/empresas/' + context.query.id);
 
   return {
     props: {
