@@ -12,14 +12,14 @@ export default async function handler(req, res) {
 }
 
 const getEmpresas = async (req, res) => {
-  const [result] = await pool.query("SELECT * FROM tblempresas")
+  const [result] = await pool.query("SELECT * FROM tblEmpresas")
   //console.log(result);
   return res.status(200).json(result)
 }
 
 const saveEmpresas = async (req, res) => {
   const { _name, _buss, _type, _itype, _empl, _logo, _stat} = req.body;
-  const [result] = await pool.query("INSERT INTO tblempresas SET ?", {
+  const [result] = await pool.query("INSERT INTO tblEmpresas SET ?", {
     empre_name: _name,
     empre_buss: _buss,
     empre_type: _type,
